@@ -2,18 +2,17 @@ kind: pipeline
 type: docker
 name: default
 
+clone:
+  disable: true
+
 steps:
-- name: build
-  image: node:16.13.0
-  commands:
-  - npm install --registry=https://registry.npm.taobao.org
-  - npm run build
-- name: deploy-dev
-  image: appleboy/drone-scp
+- name: git-pull
+  image: appleboy/drone-ssh
   settings:
     host: bt.rgs.chper.cn
     username: root
     password:
       from_secret: ssh_password
-    target: /home/team/Docker/baota/site/pre.rgs.chper.cn
-    source: dist/*
+    script:
+      - cd /home/team/Docker/baota/site/pre.rgs.chper.cn/reveal.js
+      - git pull
