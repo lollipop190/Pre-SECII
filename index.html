@@ -14,19 +14,31 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	<style>
-		body {
+		#bg{
+			position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -999;
+        filter: blur(6px) opacity(0.4);
 			background: url(./bg.svg) center/cover no-repeat;
+		
+		}
+		.slides{
+			filter:blur(-10px);
 		}
 	</style>
 </head>
 
 <body>
+	<div qid="bg"></div>
 	<div class="reveal">
 		<div class="slides">
 			<section >
-				<h1>软工三项目答辩</h1>
-				<h4>COLLECT众包测试平台</h4>
-				<div style="font-size:30px;">
+				<h2>COLLECT众包测试平台</h2>
+				<h4 style="font-weight:300;opacity: 0.6;">软工三项目答辩</h4>
+				<div style="font-size:25px;font-weight: 300;">
 					<ul>
 						<li>191250016 陈梓俊</li>
 						<li>191250031 冯国豪</li>
