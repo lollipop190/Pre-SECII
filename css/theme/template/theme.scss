@@ -7,8 +7,6 @@
 @import "./exposer";
 
 .reveal-viewport {
-	@include bodyBackground();
-	background-color: var(--r-background-color);
 }
 
 .reveal {
