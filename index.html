@@ -14,28 +14,29 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	<style>
-		#bg{
+		#bg {
 			position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -999;
-        filter: blur(6px) opacity(0.4);
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: -999;
+			filter: blur(6px) opacity(0.4);
 			background: url(./bg.svg) center/cover no-repeat;
-		
+
 		}
-		.slides{
-			filter:blur(-10px);
+
+		.slides {
+			filter: blur(-10px);
 		}
 	</style>
 </head>
 
 <body>
-	<div qid="bg"></div>
+	<div id="bg"></div>
 	<div class="reveal">
 		<div class="slides">
-			<section >
+			<section>
 				<h2>COLLECT众包测试平台</h2>
 				<h4 style="font-weight:300;opacity: 0.6;">软工三项目答辩</h4>
 				<div style="font-size:25px;font-weight: 300;">
@@ -46,6 +47,14 @@
 						<li>191250190 张潮越</li>
 					</ul>
 				</div>
+				<div id="date" style="margin-top:10%; font-size:25px"></div>
+				<script>
+					let d = new Date();
+					var year = d.getFullYear();
+					var month = d.getMonth() + 1;
+					var day = d.getDate();
+					document.getElementById('date').innerHTML = year + '-' + month + '-' + day;
+				</script>
 			</section>
 			<section>
 				总体设计思路
