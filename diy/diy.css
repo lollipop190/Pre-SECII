@@ -1,0 +1,10 @@
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -999;
+    filter: blur(6px) opacity(0.4);
+    background: url(../bg.svg) center/cover no-repeat;
+}
