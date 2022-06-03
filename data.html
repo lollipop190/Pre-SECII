@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>数据集成作业三</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/rgs.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="diy/diy.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>数据集成作业三</h2>
+				<h4 style="font-weight:300;opacity: 0.6;">方向一 机器学习</h4>
+			
+				<div id="date" style="margin-top:5%; font-size:25px"></div>
+				<script>
+					let d = new Date();
+					var year = d.getFullYear();
+					var month = d.getMonth() + 1;
+					var day = d.getDate();
+					document.getElementById('date').innerHTML = year + '-' + month + '-' + day;
+				</script>
+			</section>
+			<section>
+				总体思路
+			</section>
+			
+			<section data-auto-animate>
+				<ul>
+					<li>数据获取</li>
+				</ul>
+				<aside class="notes">
+					在数据获取阶段，主要工作就是从clickhouse数据库中读取数据，包括离线表和在线表。
+					其中一个非常大的表只选取了一部分，不然消耗的资源太多。
+				</aside>
+			</section>
+			<section data-auto-animate>
+				<ul>
+					<li>数据获取</li>
+					<li>数据处理</li>
+				</ul>
+
+				<aside class="notes">
+					数据处理阶段，主要包括缺失值处理，同一个uid多条记录取均值，以及将多张表通过uid进行连接。
+				</aside>
+			</section>
+			<section data-auto-animate>
+				<ul>
+					<li>数据获取</li>
+					<li>数据处理</li>
+					<li>模型训练</li>
+				</ul>
+
+				<aside class="notes">
+					模型训练阶段，我们尝试了决策树，随机森林，对率回归等等分类模型，经过对比和参数调整，我们最终选择随机森林模型。
+					训练过程中划分了训练集和验证集，验证集用于模型准确率的评估。
+				</aside>
+			</section>
+			<section data-auto-animate>
+				<ul>
+					<li>数据获取</li>
+					<li>数据处理</li>
+					<li>模型训练</li>
+					<li>模型预测</li>
+				</ul>
+
+				<aside class="notes">
+					模型训练完毕后，就可以将模型应用于给定的测试数据，得到预测结果。
+				</aside>
+			</section>
+
+
+			<section>
+				End.
+			</section>
+
+	
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			slideNumber: 'c/t',
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
