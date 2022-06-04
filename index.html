@@ -97,56 +97,41 @@
 					</div>
 				</section>
 				<section>
-					
-					
-		
-							<!-- <img data-id="collect" src="asset/img/collect.png" height="50"> -->
-							<h4>新建任务</h4>
-					
-						
-					
+					<h4>新建任务</h4>
 				</section>
-
 				<section data-auto-animate>
 					<div style="display:grid;grid-template-columns: 1fr 1fr">
-					
-					
 						<img src="asset/img/task.png" height="500">
-							<div>
-							
-								<ul id="taskitem">
-									<li>任务名称</li>
-									<li>任务人数</li>
-									<li>任务简介</li>
-									<li>起止时间</li>
-									<li>...</li>
-								</ul>
-							
-							</div>
+						<div>
+							<ul id="taskitem">
+								<li>任务名称</li>
+								<li>任务人数</li>
+								<li>任务简介</li>
+								<li>起止时间</li>
+								<li>...</li>
+							</ul>
+
+						</div>
 					</div>
-					
+
 					<style>
 						#taskitem {
 							margin-top: 30%;
 							margin-left: -15%;
 						}
+
 						#taskitem li {
 							font-size: 33px;
 							font-weight: 100;
 						}
 					</style>
-					
 				</section>
 				<section style="text-align: center" data-auto-animate>
-
-
 					<img src="asset/img/task.png" height="250">
 					<img class="fragment" src="asset/img/worker.png" style="margin-left:5%" height="200">
-
 					<img class="fragment" src="asset/img/report.png" height="180">
 					<img class="fragment" src="asset/img/handle.png" height="240">
 					<img class="fragment" style="margin-left:10%" src="asset/img/lin.png" height="230">
-
 				</section>
 				<section>
 					故事二
@@ -159,8 +144,6 @@
 				</section>
 				<section data-auto-animate>
 					<img src="asset/img/xiaoxv.png" height="300">
-
-
 				</section>
 				<section data-auto-animate>
 					<div style="display:grid;grid-template-columns: 1fr 1fr">
@@ -175,26 +158,26 @@
 				</section>
 				<section data-auto-animate>
 					<!-- <div style="display:grid;grid-template-columns: 1fr"> -->
-						<!-- <div><img src="asset/img/xiaoxv.png" height="300"></div> -->
+					<!-- <div><img src="asset/img/xiaoxv.png" height="300"></div> -->
 
 
-						<span data-id="collect">
-							<!-- <img src="asset/img/worker_well.png" height="300"> -->
-							COLLECT
-						</span>
+					<span data-id="collect">
+						<!-- <img src="asset/img/worker_well.png" height="300"> -->
+						COLLECT
+					</span>
 					<!-- </div> -->
 
 				</section>
 				<section data-auto-animate>
 					<div style="display:grid;grid-template-columns: 1fr 1fr">
-						<span  style="margin-top: 30%;margin-left: 10%;" data-id="collect">
+						<span style="margin-top: 30%;margin-left: 10%;" data-id="collect">
 							<!-- <img src="asset/img/worker_well.png" height="300"> -->
 							COLLECT
 						</span>
 						<div><img src="asset/img/worker_well.png" height="300"></div>
 
 						<div style="display:grid;grid-template-columns: 1fr">
-<!-- 
+							<!-- 
 						<div style="display:grid;grid-template-columns: 1fr">
 							<div data-id="result">
 								<img src="asset/img/collect.png" height="50">
@@ -202,7 +185,7 @@
 								<div>助力发包方获取优质测试报告</div>
 							</div>
 						</div> -->
-					</div>
+						</div>
 
 				</section>
 				<!-- <section>
@@ -262,7 +245,9 @@
 			</section>
 
 
-
+			<section>
+				End.
+			</section>
 
 
 
@@ -288,7 +273,10 @@
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
+
 	</script>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="node_modules/reveal-notes-server/client.js"></script>
 </body>
 
 </html>
