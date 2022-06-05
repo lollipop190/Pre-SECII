@@ -191,18 +191,109 @@
 			</section>
 
 			<section>
-				<section>总体设计思路</section>
+				<section>总体及算法设计思路</section>
 				<section>
-					<img src="asset/img/arch.jpg" >
+					<div
+						style="border:1px rgba(0,0,0,0.1) solid; padding:3%;background:white;border-radius:20px;box-shadow: 0 8px 8px 8px rgba(0,0,0,0.1)">
+						<img class="fragment r-fit-text" src="asset/img/arch.jpg">
+					</div>
+				</section>
+
+
+				<section>
+					<style>
+						.text {
+							font-size: 20px;
+							font-weight: bold;
+						}
+					</style>
+					<div style="position: fixed;left: 3%;top: 30%;">
+						<div class="fragment" style="position:relative;top: -150px;font-weight: 300;font-size: 35px;">
+							众包工人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发包方
+						</div>
+
+						<div
+							style="position:fixed;top:0;left:50%;border: 2px solid rgba(0,0,0,0.3); width:0px;height:1000px;z-index: -1;">
+						</div>
+
+						<div
+							style="display: grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr; position: relative;left: 3px;">
+							<div data-id="coll" class="fragment">
+								<img style="position:relative;" src="asset/img/pipeline/collaborate.svg" height="110">
+								<div class="text">报告协作</div>
+							</div>
+							<svg class="fragment" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200">
+								<defs>
+									<marker id="arrowhead" markerWidth="100" markerHeight="10" refX="0" refY="3.5"
+										orient="auto">
+										<polygon points="0 0, 10 3.5, 0 7" />
+									</marker>
+								</defs>
+								<line x1="0" y1="130" x2="180" y2="130" stroke="#000" stroke-width="7"
+									marker-end="url(#arrowhead)" />
+							</svg>
+							<div class="fragment">
+								<img style="position:relative;top:-10%;" src="asset/img/pipeline/quality.svg"
+									height="180">
+								<div class="text" style="margin-top:-40%">报告质量筛选</div>
+							</div>
+							<svg class="fragment" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200">
+								<defs>
+									<marker id="arrowhead" markerWidth="100" markerHeight="10" refX="0" refY="3.5"
+										orient="auto">
+										<polygon points="0 0, 10 3.5, 0 7" />
+									</marker>
+								</defs>
+								<line x1="0" y1="130" x2="180" y2="130" stroke="#000" stroke-width="7"
+									marker-end="url(#arrowhead)" />
+							</svg>
+							<div class="fragment"
+								style="position:relative;top:-25%; display: grid; grid-template-columns:1fr">
+								<div>
+									<img style="position:relative;" src="asset/img/pipeline/cluster.svg" height="110">
+									<div class="text" style="margin-top:-15%">报告聚类</div>
+								</div>
+								<div>
+									<img style="position:relative; right: -5%;" src="asset/img/pipeline/sort.svg"
+										height="110">
+									<div class="text" style="margin-top:-10%">报告排序</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div>
+						<img src="asset/img/pipeline/collaborate.svg" height="110">
+						<div>报告协作</div>
+					</div>
 				</section>
 				<section>
-					<img style="position:relative;top:50px" src="asset/img/pipeline/collaborate.svg" height="130">
-					<img style="position:relative;top:-50px" src="asset/img/pipeline/sort.svg" height="130">
-					<img style="position:relative;top:50px" src="asset/img/pipeline/quality.svg" height="130">
-					<img style="position:relative;top:-50px" src="asset/img/pipeline/cluster.svg" height="130">
-				
+					<div>
+						<img src="asset/img/pipeline/quality.svg" height="180">
+						<div>报告质量筛选</div>
+					</div>
+				</section>
+
+				<section>
+
+					<div>
+						<img src="asset/img/pipeline/cluster.svg" height="110">
+						<div >报告聚类</div>
+					</div>
+
+				</section>
+
+				<section>
+					<div>
+						<img src="asset/img/pipeline/sort.svg" height="110">
+						<div >报告排序</div>
+					</div>
 				</section>
 			</section>
+
+			<!-- 前端 -->
 			<section>
 				<section>
 					前端设计亮点
@@ -246,10 +337,17 @@
 					</aside>
 				</section>
 			</section>
-
+			<!--  后端 -->
 			<section>
 				<section>后端设计亮点</section>
-				
+				<section>
+
+					<div style="display:flex; justify-content: center; align-items: center;">
+						<img class="fragment" src="asset/img/security.png" height="150">
+						<img class="fragment" src="asset/img/socket.png" height="150">
+						<img class="fragment" src="asset/img/as.png" height="100">
+					</div>
+				</section>
 			</section>
 			<section>
 				End.
