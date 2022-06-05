@@ -269,14 +269,33 @@
 						<div>报告协作</div>
 					</div>
 				</section>
-				<section>
+				<section data-auto-animate>
 					<div>
 						<img src="asset/img/pipeline/quality.svg" height="180">
 						<div>报告质量筛选</div>
 					</div>
 				</section>
+					<section data-auto-animate>
+						<div style="display:grid;grid-template-columns: 1fr 1fr">
+						<div>
+							<img src="asset/img/pipeline/quality.svg" height="180">
+							<div>报告质量筛选</div>
+						</div>
+						<div>
 
-				<section>
+
+						<ul style="font-weight:300;font-size:30px;margin-top: 12%;">
+							<li>测试报告完整性</li>
+							<li>报告相关性</li>
+							<li>众包工人评议</li>
+							<li>报告协作指数</li>
+							<li>测试工人资历</li>
+						</ul>	
+						</div>
+						</div>
+					</section>
+
+				<section data-auto-animate>
 
 					<div>
 						<img src="asset/img/pipeline/cluster.svg" height="110">
@@ -284,7 +303,27 @@
 					</div>
 
 				</section>
-
+	<section data-auto-animate>
+	<div style="display:grid;grid-template-columns: 1fr 1fr">
+		<div>
+			<img src="asset/img/pipeline/cluster.svg" height="110">
+			<div>报告聚类</div>
+		</div>
+		<div>
+			<ul style="font-weight:300;font-size:28px;margin-top: 7%;">
+				<li>
+					文本相似度：词嵌入+余弦相似度
+					</li>
+				<li>
+					图片相似度：使用MobileNet模型进行特征提取并计算
+				</li>
+				<li>
+					聚类：基于报告质量评分，使用系统性聚类算法
+				</li>
+			</ul>
+		</div>
+	</div>
+	</section>
 				<section>
 					<div>
 						<img src="asset/img/pipeline/sort.svg" height="110">
