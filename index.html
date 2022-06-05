@@ -175,16 +175,6 @@
 							COLLECT
 						</span>
 						<div><img src="asset/img/worker_well.png" height="300"></div>
-
-<!--						<div style="display:grid;grid-template-columns: 1fr">-->
-							<!-- 
-						<div style="display:grid;grid-template-columns: 1fr">
-							<div data-id="result">
-								<img src="asset/img/collect.png" height="50">
-								<div>提升测试工人群体测试能力</div>
-								<div>助力发包方获取优质测试报告</div>
-							</div>
-						</div> -->
 						</div>
 
 				</section>
@@ -264,12 +254,29 @@
 					</div>
 				</section>
 
-				<section data-transition="zoom">
+				<section data-transition="zoom" data-auto-animate>
+				
 					<div>
 						<img src="asset/img/pipeline/collaborate.svg" height="110">
 						<div>消息系统</div>
 					</div>
 				</section>
+				<section data-auto-animate>
+					<div style="display:grid;grid-template-columns: 1fr 1fr">
+					<div>
+						<img src="asset/img/pipeline/collaborate.svg" height="110">
+						<div>消息系统</div>
+					</div>
+					<div>
+						<ul style="font-weight:300;font-size:30px;margin-left:-10%;margin-top: 10%;">
+							<li>WebSocket</li>
+							<li>事件消息推送</li>
+							<li>用户之间的即时通信</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+					
 				<section data-auto-animate>
 					<div>
 						<img src="asset/img/pipeline/quality.svg" height="180">
@@ -311,9 +318,9 @@
 							<div>报告聚类</div>
 						</div>
 						<div>
-							<ul style="font-weight:300;font-size:28px;margin-top: 7%;">
+							<ul style="font-weight:300;font-size:27px;margin-top: 7%;">
 								<li>
-									文本相似度：词嵌入+余弦相似度
+									文本相似度：使用Word-Embedding模型进行词嵌入并计算余弦
 								</li>
 								<li>
 									图片相似度：使用MobileNet模型进行特征提取并计算
@@ -325,6 +332,7 @@
 						</div>
 					</div>
 				</section>
+			
 			</section>
 
 			<!-- 前端 -->
